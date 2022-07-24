@@ -1,0 +1,4 @@
+//Define all the variables
+
+
+
