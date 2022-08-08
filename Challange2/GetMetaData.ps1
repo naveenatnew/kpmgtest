@@ -12,5 +12,5 @@ $header = ' -Headers @{"Metadata"="true"} -Method GET -NoProxy -Uri "http://169.
 $convert = ' | ConvertTo-Json  -Depth 64'
 
 if ($servername=$args[0] = 'ip'){ Invoke-RestMethod $header $pip $convert }
-if ($servername=$args[0] = 'tags'){ Invoke-RestMethod $header $pip $convert }
-if ($servername=$args[0] = 'ni'){ Invoke-RestMethod $header $pip $convert }
+if ($servername=$args[0] = 'tags'){ Invoke-RestMethod $header $tags $convert }
+if ($servername=$args[0] = 'ni'){ Invoke-RestMethod $header $ni $convert }
